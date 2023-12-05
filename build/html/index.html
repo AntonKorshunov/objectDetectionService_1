@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="rus" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Object Detection Service &#8212; ServiceOD 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=1e134c08"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Service" href="service.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="object-detection-service">
+<span id="objectdetectionservice"></span><h1>Object Detection Service<a class="headerlink" href="#object-detection-service" title="Link to this heading">¶</a></h1>
+<p>Добро пожаловать в документацию Object Detection Service!</p>
+<section id="id1">
+<h2>Общее описание<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>Object Detection Service - это программный сервис, предназначенный для определения, является ли объект перед камерой живым, и для распознавания объектов с использованием YOLOv5.</p>
+</section>
+<section id="id2">
+<h2>Требования<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Python версии 3.9 или выше.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>Установка и запуск<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Склонировать ветку проекта.</p></li>
+<li><p>Выполнить в консоли команду для настройки окружения:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+</li>
+<li><p>Запустить сервис командой:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>run.py
+</pre></div>
+</div>
+<p>При первом запуске автоматически скачаются веса для YOLOv5.</p>
+</li>
+</ol>
+<p>Классы и методы</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="service.html">Service</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="service.html#id1">Описание класса Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#id2">Методы класса</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="service_od.html">ServiceOD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="service_od.html#id1">Описание класса ServiceOD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service_od.html#id2">Методы класса</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="camera.html">Camera</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="camera.html#id1">Описание класса Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="camera.html#id2">Методы класса</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">ServiceOD</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="service.html">Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="service_od.html">ServiceOD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="camera.html">Camera</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="service.html" title="next chapter">Service</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Eliseev A.N., Korshunov A.S..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

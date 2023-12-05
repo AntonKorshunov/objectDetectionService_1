@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="rus" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ServiceOD &#8212; ServiceOD 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=1e134c08"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Camera" href="camera.html" />
+    <link rel="prev" title="Service" href="service.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="serviceod">
+<h1>ServiceOD<a class="headerlink" href="#serviceod" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>Описание класса ServiceOD<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>Класс ServiceOD расширяет функциональность базового класса Service для обнаружения объектов и определения их статуса (живой/неживой) на видеопотоке с использованием модели YOLOv5.</p>
+</section>
+<section id="id2">
+<h2>Методы класса<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">_do_job(self)</span></code>:
+Основная функция обработки видеопотока. Получает кадры из потока и обрабатывает их с использованием модели YOLOv5.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">__init_vars(self)</span></code>:
+Инициализация необходимых переменных и настройка модели YOLOv5.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_start_yolo(self)</span></code>:
+Настройка и инициализация модели YOLOv5.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">__resp_hand(self,</span> <span class="pre">response)</span></code>:
+Обработка ответов от модели.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">__specific_work(self)</span></code>:
+Специфичная для данного сервиса работа над каждым фреймом видеопотока.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_request_handler(self,</span> <span class="pre">request)</span></code>:
+Обработка входящих запросов, таких как 'checkAlive', 'getFrame', 'getObjects', 'getDownNN', '<a href="#id3"><span class="problematic" id="id4">getUpNN_</span></a>', '<a href="#id5"><span class="problematic" id="id6">applyThreshold_</span></a>'.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ServiceOD</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="service.html">Service</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ServiceOD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Описание класса ServiceOD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Методы класса</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="camera.html">Camera</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="service.html" title="previous chapter">Service</a></li>
+      <li>Next: <a href="camera.html" title="next chapter">Camera</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Eliseev A.N., Korshunov A.S..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/service_od.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
